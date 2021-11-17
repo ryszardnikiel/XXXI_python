@@ -1,0 +1,23 @@
+# Create a list called available_stock that will contain the following items, its prices and stocks:
+# milk - for 4 PLN - 2 available,
+# water - for 0.5 PLN - 2 available,
+# bread - for 1 PLN - 10 available,
+# butter - for 5 PLN - 1 available,
+# apple - for 2.1 PLN - 1 available,
+# coffee - for 7.5 PLN - 3 available,
+# Create a program that:
+# Until customer says "done", request what product customer would like to add to the "basket" with the message
+#                             "Please select one of the following products or type "done": "
+# Hint: use a while loop ("while input is not 'done', ask customer a new product")
+# If the product is available, add to the basket and print message "Item added to the basket."
+#           Make sure to check the availability of the stock for certain product
+#           Example: customer can only buy one butter, because there is only one available!!!!
+# If the product is out of stock, print message "Sorry, product out of stock"
+# When the customer is done shopping, print a message "End of shopping. Selected items: "
+# Print, one item at a time, with it's price, as a check normally shows, example:
+# Milk - 4 PLN
+# Milk - 4 PLN
+# Water - 0.5 PLN
+# Apple - 2.1 PLN
+# Print the total value of the bill, example:
+# Total value of the bill: 10.6 PLN
