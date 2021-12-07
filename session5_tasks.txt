@@ -1,8 +1,0 @@
-# 1. Check how many movies in a list
-# 2. Check the structure of the first element
-# 3. Create function 'get_best_movie' which returns movie with highest rank
-# 4. Create function 'get_oldest_movie' which returns the oldest movie
-# 5. Create function 'get_best_movie_type' which returns the best movie for provided movie genre e.g western
-# 6. get the list of directors - each list element is one director
-# 7. get the list of unique directors - each list element is one director
-# 8. get the dict with occurences count in db for each director
