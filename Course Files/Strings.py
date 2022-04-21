@@ -29,9 +29,10 @@ f'I am {age} years old'  # f-string added in Python 3.6'''
 
 # s_name = 'Joseph K'
 # s_class = 4
-# s_marks = 99.355554
+# s_marks = 99.88999
 # print(f'He is {s_name}. He is in the {s_class}th standar. He got {s_marks:.2f} in the last session.')
 
+# ### Summarize Type Filtering sub types
 # input()
 # system('clear')
 
@@ -50,7 +51,7 @@ f'I am {age} years old'  # f-string added in Python 3.6'''
 
 
 ## Playing with Print
-# for x in range(3):
+# for x in range(5):
 #     for f in r'-\|/-\|/':
 #         print('\b', f, sep='', end='', flush=True)
 #         sleep(0.2)
@@ -68,3 +69,6 @@ f'I am {age} years old'  # f-string added in Python 3.6'''
 # for i in range(101):
 #     progress(i)
 #     sleep(0.1)
+
+# input()
+# system('clear')

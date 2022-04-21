@@ -36,7 +36,7 @@ For example, if  my pet is hungry (condition), then I will feed the pet (action)
 
 
 
-## Match Case is included in Python 10
+## Match Case is included in Python 3.10
 '''
 type='Fruits'
 
@@ -85,7 +85,7 @@ else:
 # input()
 
 # for letter in 'This is a string.':
-#     print(letter)
+#     print(letter, end=' ')
 
 # input()
 # system('clear')
@@ -115,18 +115,18 @@ pass: Does nothing at all.
 
 
 
-x = 0
+x = 2
 
-while x < 10:
-    print('x is currently: ',x)
-    print(' x is still less than 10, adding 1 to x')
-    x+=1
-    if x==3:
-        print('Breaking because x==3')
-        break
-    else:
-        print('continuing...')
-        continue
+# while x < 10:
+#     print('x is currently: ',x)
+#     print(' x is still less than 10, adding 1 to x')
+#     x+=1
+#     if x==3:
+#         print('Breaking because x==3')
+#         break
+#     else:
+#         print('continuing...')
+#         continue
 
 input()
 system('clear')

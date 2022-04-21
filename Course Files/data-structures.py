@@ -12,21 +12,21 @@ Lists are just like the dynamically sized arrays declared in other languages. Bu
 # print(List[0])
 # print(List[2])
 
-# input()
-# system('clear')
+input()
+system('clear')
 
-# # Creating a Multi-Dimensional List
-# List = [['Python', 'For'], ['All']]
+# Creating a Multi-Dimensional List
+List = [['Python', 'For'], ['All']]
 # print("\nMulti-Dimensional List: ")
-# print(List)
+# print(List[0])
 
-# input()
+input()
 
-# #size of List
-# print(len(List))
+#size of List
+print(len(List))
 
-# input()
-# system('clear')
+input()
+system('clear')
 
 ## dynamic List Operations ============================
 
@@ -79,8 +79,8 @@ input()
 '''
 Elements can be removed from the List by using the built-in remove() function but an Error arises if the element doesn’t exist in the list. Remove() method only removes one element at a time, to remove a range of elements, the iterator is used. 
 '''
-List.remove(0)
-List.remove(1)
+List.remove('Way')
+List.remove(4)
 print("List after performing Remove Operation: ", end='')
 print(List)
 
