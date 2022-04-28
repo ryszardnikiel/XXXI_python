@@ -37,6 +37,7 @@ __maintainer__ = "Shantanu Datta"
 __status__ = "Development"
 
 # Required Libraries
+from distutils.log import debug
 from os import system
 import random
 from time import *
@@ -105,13 +106,14 @@ def display_board(pos,game, marker):
     print(100*'=',end='\n\n')
     print(f'\033[1m{game[1]}\033[0m, your character is \033[1m"{marker[0]}"\033[0m, while \033[1m{game[2]}\033[0m will use \033[1m"{marker[1]}"\033[0m.\n\n')
 
-    print('\n\n|-----|-----|-----|')
-    print(f'|  {pos[7]}  |  {pos[8]}  |  {pos[9]}  |')
-    print('|-----|-----|-----|')
-    print(f'|  {pos[4]}  |  {pos[5]}  |  {pos[6]}  |')
-    print('|-----|-----|-----|')
-    print(f'|  {pos[1]}  |  {pos[2]}  |  {pos[3]}  |')
-    print('|-----|-----|-----|\n\n')
+    print(12*'\t', '\033[4m Game Key Layout \033[0m')
+    print('\n\n|-----|-----|-----|','|-----|-----|-----|', sep=10*'\t')
+    print(f'|  {pos[7]}  |  {pos[8]}  |  {pos[9]}  |', '|  7  |  8  |  9  |', sep=10*'\t')
+    print('|-----|-----|-----|','|-----|-----|-----|', sep=10*'\t')
+    print(f'|  {pos[4]}  |  {pos[5]}  |  {pos[6]}  |', '|  4  |  5  |  6  |', sep=10*'\t')
+    print('|-----|-----|-----|','|-----|-----|-----|', sep=10*'\t')
+    print(f'|  {pos[1]}  |  {pos[2]}  |  {pos[3]}  |', '|  1  |  2  |  3  |', sep=10*'\t')
+    print('|-----|-----|-----|','|-----|-----|-----|', sep=10*'\t', end='\n\n')
 
 
 def pos_is_free(board_pos, position):
@@ -124,8 +126,11 @@ def get_move(board_pos,name):
     position = 0
     
     while position not in [1,2,3,4,5,6,7,8,9] or not pos_is_free(board_pos, position):
-        position = int(input(f'\033[1m{name}\033[0m make your next move: (1-9) '))
-        
+        try:
+            position = int(input(f'\033[1m{name}\033[0m make your next move: (1-9) '))
+        except ValueError:
+            pass
+
     return position
 
 
