@@ -7,18 +7,18 @@ Lists are just like the dynamically sized arrays declared in other languages. Bu
 '''
 
 # Creating a List of strings and accessing using index
-# List = ["Python", "For", "All"]
-# print("\nList Items: ")
-# print(List[0])
-# print(List[2])
+List = ["Python", "For", "All"]
+print("\nList Items: ")
+print(List[0])
+print(List[2])
 
 input()
 system('clear')
 
 # Creating a Multi-Dimensional List
 List = [['Python', 'For'], ['All']]
-# print("\nMulti-Dimensional List: ")
-# print(List[0])
+print("\nMulti-Dimensional List: ")
+print(List[0])
 
 input()
 
@@ -77,7 +77,8 @@ print(List)
 input()
 
 '''
-Elements can be removed from the List by using the built-in remove() function but an Error arises if the element doesn’t exist in the list. Remove() method only removes one element at a time, to remove a range of elements, the iterator is used. 
+Elements can be removed from the List by using the built-in remove() function but an Error arises if the element doesn’t exist in the list. 
+Remove() method only removes one element at a time, to remove a range of elements, the iterator is used. 
 '''
 List.remove('Way')
 List.remove(4)

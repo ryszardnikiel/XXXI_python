@@ -8,31 +8,31 @@ system('clear')
 For example, if  my pet is hungry (condition), then I will feed the pet (action).
 '''
 
-# num = 0
+num = 0
 
-# if num > 0:
-#     print("Positive number")
-# elif num == 0:
-#     print("Zero")
-# else:
-#     print("Negative number")
+if num > 0:
+    print("Positive number")
+elif num == 0:
+    print("Zero")
+else:
+    print("Negative number")
 
-# input()
-# system('clear')
+input()
+system('clear')
 
 ## Nested IF Statement
 
-# num = float(input("Enter a number: "))
-# if num >= 0:
-#     if num == 0:
-#         print("Zero")
-#     else:
-#         print("Positive number")
-# else:
-#     print("Negative number")
+num = float(input("Enter a number: "))
+if num >= 0:
+    if num == 0:
+        print("Zero")
+    else:
+        print("Positive number")
+else:
+    print("Negative number")
 
-# input()
-# system('clear')
+input()
+system('clear')
 
 
 
@@ -57,7 +57,7 @@ If you need to repeat a piece of code several times to get a final result, then 
   b)  while loops for indefinite iteration, or repeating until a given condition is met
 '''
 
-## For Loop
+## For Loops
 '''
 for loop_var in iterable:
     # Repeat this code block until iterable is exhausted
@@ -73,22 +73,22 @@ else:
 # Next statement
 '''
 ##Printing Even Values
-# my_list = [1,2,3,4,5,6,7,8,9,10]
-# i = 0
-# for n in my_list:
-#     if n%2 == 0:
-#         print(n)
-#         i+=1
-# else:
-#     print(f'{i} even number found')
+my_list = [1,2,3,4,5,6,7,8,9,10]
+i = 0
+for n in my_list:
+    if n%2 == 0:
+        print(n)
+        i+=1
+else:
+    print(f'{i} even number found')
 
-# input()
+input()
 
-# for letter in 'This is a string.':
-#     print(letter, end=' ')
+for letter in 'This is a string.':
+    print(letter, end=' ')
 
-# input()
-# system('clear')
+input()
+system('clear')
 
 
 
@@ -117,16 +117,16 @@ pass: Does nothing at all.
 
 x = 2
 
-# while x < 10:
-#     print('x is currently: ',x)
-#     print(' x is still less than 10, adding 1 to x')
-#     x+=1
-#     if x==3:
-#         print('Breaking because x==3')
-#         break
-#     else:
-#         print('continuing...')
-#         continue
+while x < 10:
+    print('x is currently: ',x)
+    print(' x is still less than 10, adding 1 to x')
+    x+=1
+    if x==3:
+        print('Breaking because x==3')
+        break
+    else:
+        print('continuing...')
+        continue
 
 input()
 system('clear')
