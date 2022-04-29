@@ -37,7 +37,7 @@ __maintainer__ = "Shantanu Datta"
 __status__ = "Development"
 
 # Required Libraries
-from distutils.log import debug
+#from distutils.log import debug
 from os import system
 import random
 from time import *
@@ -106,14 +106,14 @@ def display_board(pos,game, marker):
     print(100*'=',end='\n\n')
     print(f'\033[1m{game[1]}\033[0m, your character is \033[1m"{marker[0]}"\033[0m, while \033[1m{game[2]}\033[0m will use \033[1m"{marker[1]}"\033[0m.\n\n')
 
-    print(12*'\t', '\033[4m Game Key Layout \033[0m')
-    print('\n\n|-----|-----|-----|','|-----|-----|-----|', sep=10*'\t')
-    print(f'|  {pos[7]}  |  {pos[8]}  |  {pos[9]}  |', '|  7  |  8  |  9  |', sep=10*'\t')
-    print('|-----|-----|-----|','|-----|-----|-----|', sep=10*'\t')
-    print(f'|  {pos[4]}  |  {pos[5]}  |  {pos[6]}  |', '|  4  |  5  |  6  |', sep=10*'\t')
-    print('|-----|-----|-----|','|-----|-----|-----|', sep=10*'\t')
-    print(f'|  {pos[1]}  |  {pos[2]}  |  {pos[3]}  |', '|  1  |  2  |  3  |', sep=10*'\t')
-    print('|-----|-----|-----|','|-----|-----|-----|', sep=10*'\t', end='\n\n')
+    print(6*'\t', '\033[4m Game Key Layout \033[0m')
+    print('\n\n|-----|-----|-----|','|-----|-----|-----|', sep=4*'\t')
+    print(f'|  {pos[7]}  |  {pos[8]}  |  {pos[9]}  |', '|  7  |  8  |  9  |', sep=4*'\t')
+    print('|-----|-----|-----|','|-----|-----|-----|', sep=4*'\t')
+    print(f'|  {pos[4]}  |  {pos[5]}  |  {pos[6]}  |', '|  4  |  5  |  6  |', sep=4*'\t')
+    print('|-----|-----|-----|','|-----|-----|-----|', sep=4*'\t')
+    print(f'|  {pos[1]}  |  {pos[2]}  |  {pos[3]}  |', '|  1  |  2  |  3  |', sep=4*'\t')
+    print('|-----|-----|-----|','|-----|-----|-----|', sep=4*'\t', end='\n\n')
 
 
 def pos_is_free(board_pos, position):
@@ -234,7 +234,7 @@ def start_game(game):
     while True:
         system('clear')
         in_game = True
-        marker = player_character()
+        marker = player_character() # Return X or O
 
         board_pos = [' '] * 10 #Setting initial Board Structure
         current_player = game[who_will_begin()]
